@@ -1,0 +1,31 @@
+.grid-row {
+  width: 100%;
+}
+
+.grid-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+.grid-col-1, .grid-col-2, .grid-col-3 {
+  background-color: aqua;
+  width: 100px;
+  height: 100px;
+}
+
+.grid-col-1 {
+  flex-grow: 1;
+}
+
+.grid-col-2 {
+  flex-grow: 2;
+}
+
+.grid-col-3 {
+  flex-grow: 3;
+}
+
+/*# sourceMappingURL=styles.css.map */
