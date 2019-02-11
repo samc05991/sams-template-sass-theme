@@ -2,31 +2,66 @@
 
 }
 
+@for $i from 1 through 12 {
+    .grid-col-#{$i} {
+        // background-color: aqua;
+        // width: 100px;
+        // height: 100px;
+        flex-grow: $i;
+        background: tomato;
+        // padding: 5px;
+        // width: 100px;
+        // height: 100px;
+        // margin: 10px;
+        
+        // line-height: 100px;
+        // color: white;
+        // font-weight: bold;
+        // font-size: 2em;
+        // text-align: center;
+    }
+}
+
 .grid-row {
     width: 100%;
 }
 
+.grid-item {
+
+}
+
 .grid-container {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    border: 1px solid silver;
+    -ms-box-orient: horizontal;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -moz-flex;
+    display: -webkit-flex;
     display: flex;
-    flex-direction: row;
+    -webkit-flex-wrap: wrap;
     flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: stretch;
-}
 
-.grid-col-1, .grid-col-2, .grid-col-3 {
-    background-color: aqua;
-    width: 100px;
-    height: 100px;
+    // display: flex;
+    // flex-direction: row;
+    // flex-wrap: wrap;
+    // justify-content: space-between;
+    // align-items: stretch;
 }
-.grid-col-1 {
-    flex-grow: 1;
-}
+// .grid-col--#{$number} {
+//     flex-grow: 2;
+// }
+// .grid-col-1 {
+//     flex-grow: 1;
+// }
 
-.grid-col-2 {
-    flex-grow: 2;
-}
+// .grid-col-2 {
+//     flex-grow: 2;
+// }
 
-.grid-col-3 {
-    flex-grow: 3;
-}
+// .grid-col-3 {
+//     flex-grow: 3;
+// }

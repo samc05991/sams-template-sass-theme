@@ -1,31 +1,81 @@
+.grid-col-1 {
+  flex-grow: 1;
+  background: tomato;
+}
+
+.grid-col-2 {
+  flex-grow: 2;
+  background: tomato;
+}
+
+.grid-col-3 {
+  flex-grow: 3;
+  background: tomato;
+}
+
+.grid-col-4 {
+  flex-grow: 4;
+  background: tomato;
+}
+
+.grid-col-5 {
+  flex-grow: 5;
+  background: tomato;
+}
+
+.grid-col-6 {
+  flex-grow: 6;
+  background: tomato;
+}
+
+.grid-col-7 {
+  flex-grow: 7;
+  background: tomato;
+}
+
+.grid-col-8 {
+  flex-grow: 8;
+  background: tomato;
+}
+
+.grid-col-9 {
+  flex-grow: 9;
+  background: tomato;
+}
+
+.grid-col-10 {
+  flex-grow: 10;
+  background: tomato;
+}
+
+.grid-col-11 {
+  flex-grow: 11;
+  background: tomato;
+}
+
+.grid-col-12 {
+  flex-grow: 12;
+  background: tomato;
+}
+
 .grid-row {
   width: 100%;
 }
 
 .grid-container {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  border: 1px solid silver;
+  -ms-box-orient: horizontal;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -moz-flex;
+  display: -webkit-flex;
   display: flex;
-  flex-direction: row;
+  -webkit-flex-wrap: wrap;
   flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: stretch;
-}
-
-.grid-col-1, .grid-col-2, .grid-col-3 {
-  background-color: aqua;
-  width: 100px;
-  height: 100px;
-}
-
-.grid-col-1 {
-  flex-grow: 1;
-}
-
-.grid-col-2 {
-  flex-grow: 2;
-}
-
-.grid-col-3 {
-  flex-grow: 3;
 }
 
 /*# sourceMappingURL=styles.css.map */
