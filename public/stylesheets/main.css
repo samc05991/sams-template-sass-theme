@@ -1,61 +1,61 @@
 .grid-col-1 {
   flex-grow: 1;
-  background: tomato;
+  background: red;
 }
 
 .grid-col-2 {
   flex-grow: 2;
-  background: tomato;
+  background: red;
 }
 
 .grid-col-3 {
   flex-grow: 3;
-  background: tomato;
+  background: red;
 }
 
 .grid-col-4 {
   flex-grow: 4;
-  background: tomato;
+  background: red;
 }
 
 .grid-col-5 {
   flex-grow: 5;
-  background: tomato;
+  background: red;
 }
 
 .grid-col-6 {
   flex-grow: 6;
-  background: tomato;
+  background: red;
 }
 
 .grid-col-7 {
   flex-grow: 7;
-  background: tomato;
+  background: red;
 }
 
 .grid-col-8 {
   flex-grow: 8;
-  background: tomato;
+  background: red;
 }
 
 .grid-col-9 {
   flex-grow: 9;
-  background: tomato;
+  background: red;
 }
 
 .grid-col-10 {
   flex-grow: 10;
-  background: tomato;
+  background: red;
 }
 
 .grid-col-11 {
   flex-grow: 11;
-  background: tomato;
+  background: red;
 }
 
 .grid-col-12 {
   flex-grow: 12;
-  background: tomato;
+  background: red;
 }
 
 .grid-row {
@@ -78,4 +78,4 @@
   flex-wrap: wrap;
 }
 
-/*# sourceMappingURL=styles.css.map */
+/*# sourceMappingURL=main.css.map */
