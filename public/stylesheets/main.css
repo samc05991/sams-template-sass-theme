@@ -1,81 +1,74 @@
-.grid-col-1 {
-  flex-grow: 1;
-  background: red;
-}
-
-.grid-col-2 {
-  flex-grow: 2;
-  background: red;
-}
-
-.grid-col-3 {
-  flex-grow: 3;
-  background: red;
-}
-
-.grid-col-4 {
-  flex-grow: 4;
-  background: red;
-}
-
-.grid-col-5 {
-  flex-grow: 5;
-  background: red;
-}
-
-.grid-col-6 {
-  flex-grow: 6;
-  background: red;
-}
-
-.grid-col-7 {
-  flex-grow: 7;
-  background: red;
-}
-
-.grid-col-8 {
-  flex-grow: 8;
-  background: red;
-}
-
-.grid-col-9 {
-  flex-grow: 9;
-  background: red;
-}
-
-.grid-col-10 {
-  flex-grow: 10;
-  background: red;
-}
-
-.grid-col-11 {
-  flex-grow: 11;
-  background: red;
-}
-
-.grid-col-12 {
-  flex-grow: 12;
-  background: red;
-}
-
-.grid-row {
+.sc-container {
   width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: repeat(3, auto);
 }
 
-.grid-container {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-  border: 1px solid silver;
-  -ms-box-orient: horizontal;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -moz-flex;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-flex-wrap: wrap;
-  flex-wrap: wrap;
+.sc-col {
+  width: 100%;
+  background: darkblue;
+  border-radius: 5px;
+}
+
+.sc-app-container {
+  width: 100%;
+  height: 100%;
+  transition: grid-template-columns 5s;
+  transition: background-color 5s;
+  background-color: aliceblue;
+  display: grid;
+  grid-template-columns: 200px auto;
+  grid-template-rows: 60px auto 60px;
+  grid-template-areas: "sidebar header" "sidebar content" "sidebar footer";
+}
+
+.sc-header {
+  grid-area: header;
+}
+
+.sc-content {
+  grid-area: content;
+}
+
+.sc-footer {
+  grid-area: footer;
+}
+
+.sc-sidebar {
+  grid-area: sidebar;
+  background-color: red;
+}
+
+.sc-align-items--left {
+  align-items: left;
+}
+
+.sc-align-items--center {
+  align-items: center;
+}
+
+.sc-align-items--right {
+  align-items: right;
+}
+
+.sc-justify-items--left {
+  justify-items: left;
+}
+
+.sc-justify-items--center {
+  justify-items: center;
+}
+
+.sc-justify-items--right {
+  justify-items: right;
+}
+
+body, html {
+  margin: 0px;
+  height: 100%;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 
 /*# sourceMappingURL=main.css.map */

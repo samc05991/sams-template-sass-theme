@@ -1,67 +1,49 @@
-@mixin col($col) {
-
-}
-
-@for $i from 1 through 12 {
-    .grid-col-#{$i} {
-        // background-color: aqua;
-        // width: 100px;
-        // height: 100px;
-        flex-grow: $i;
-        background: red;
-        // padding: 5px;
-        // width: 100px;
-        // height: 100px;
-        // margin: 10px;
-        
-        // line-height: 100px;
-        // color: white;
-        // font-weight: bold;
-        // font-size: 2em;
-        // text-align: center;
-    }
-}
-
-.grid-row {
+.sc-container {
     width: 100%;
+    height: 100%;
+
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: repeat(3, auto);
+    
 }
 
-.grid-item {
-
+.sc-col {
+    width: 100%;
+    background: darkblue;
+    border-radius: 5px;
 }
 
-.grid-container {
-    padding: 0;
-    margin: 0;
-    list-style: none;
-    border: 1px solid silver;
-    -ms-box-orient: horizontal;
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -moz-flex;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-flex-wrap: wrap;
-    flex-wrap: wrap;
+.sc-app-container {
+    width: 100%;
+    height: 100%;
+    transition: grid-template-columns 5s;
+    transition: background-color 5s;
 
-    // display: flex;
-    // flex-direction: row;
-    // flex-wrap: wrap;
-    // justify-content: space-between;
-    // align-items: stretch;
+    background-color: aliceblue;
+
+    display: grid;
+    grid-template-columns: 200px auto;
+    grid-template-rows: 60px auto 60px;
+    grid-template-areas: 
+        "sidebar header"
+        "sidebar content"
+        "sidebar footer";
 }
-// .grid-col--#{$number} {
-//     flex-grow: 2;
-// }
-// .grid-col-1 {
-//     flex-grow: 1;
-// }
 
-// .grid-col-2 {
-//     flex-grow: 2;
-// }
+.sc-header {
+    grid-area: header;
+}
 
-// .grid-col-3 {
-//     flex-grow: 3;
-// }
+.sc-content {
+    grid-area: content;
+}
+
+.sc-footer {
+    grid-area: footer;
+}
+
+.sc-sidebar {
+    grid-area: sidebar;
+    background-color: red;
+}

@@ -1,0 +1,11 @@
+@each $align, $direction in $directions {
+    .sc-align-items--#{$align} {
+        align-items: $direction;
+    }
+}
+
+@each $justify, $direction in $directions {
+    .sc-justify-items--#{$justify} {
+        justify-items: $direction;
+    }
+}

@@ -1,1 +1,9 @@
+@import "vars";
 @import "grid";
+@import "utils";
+
+body, html{
+    margin: 0px;
+    height: 100%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
