@@ -47,3 +47,10 @@
     grid-area: sidebar;
     background-color: red;
 }
+
+.sc-row {
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    margin: 10px;
+    padding: 5px;
+}

@@ -1,0 +1,50 @@
+.sc-label {
+  border-radius: 10px;
+  border: 0px;
+  margin-left: 8px;
+  padding: 3px 7px 3px 7px;
+  font-size: 15px;
+  display: inline;
+  color: $white;
+
+  &--primary {
+    background-color: $primary-color;
+  }
+
+  &--secondary {
+    background-color: $secondary-color;
+  }
+
+  &--warning {
+    background-color: $warning-color;
+  }
+
+  &--danger {
+    background-color: $danger-color;
+  }
+
+  &--success {
+    background-color: $success-color;
+  }
+}
+
+.sc-label-sm {
+  font-size: 13px;
+}
+
+.sc-label-lg {
+  font-size: 17px;
+}
+
+// .sc-label-primary {
+//   background-color: $primary-color;
+//   border-color: $white;
+//   color: $white;
+// }
+
+// .sc-label-secondary {
+//   background-color: $secondary-color;
+//   border-color: $white;
+//   color: $white;
+// }
+
