@@ -20,7 +20,7 @@
     transition: grid-template-columns 5s;
     transition: background-color 5s;
 
-    background-color: aliceblue;
+    background-color: rgb(230, 233, 236);
 
     display: grid;
     grid-template-columns: 200px auto;
@@ -45,7 +45,7 @@
 
 .sc-sidebar {
     grid-area: sidebar;
-    background-color: red;
+    background-color: $secondary-color;
 }
 
 .sc-row {

@@ -1,9 +1,45 @@
 .sc-btn {
+  min-width: 120px;
+  min-height: 40px;
+  border-radius: 3px;
+  border: 0px;
+  margin-left: 8px;
+  opacity: 0.9;
+  font-size: 16px;
+
+  -webkit-box-shadow: 3px 3px 6px -1px rgba(0,0,0,0.75);
+  -moz-box-shadow: 3px 3px 6px -1px rgba(0,0,0,0.75);
+  box-shadow: 3px 3px 6px -1px rgba(0,0,0,0.75);
+
+  &--primary {
+    background-color: $primary-color;
+    border-color: $white;
+    color: $white;
+  }
+  
+  &--light {
+    background-color: $white;
+    border-color: $primary-color;
+    color: $primary-color;
+  }
+  
+  &--secondary {
+    background-color: $secondary-color;
+    border-color: $white;
+    color: $white;
+  }
+}
+
+.sc-btn-sm {
+  min-width: 90px;
+  min-height: 30px;
+  font-size: 14px;
+}
+
+.sc-btn-lg {
   min-width: 150px;
   min-height: 50px;
-  border-radius: 3px;
-  margin-left: 8px;
-  opacity: 0.85;
+  font-size: 18px;
 }
 
 .sc-btn:hover {
@@ -16,34 +52,14 @@
   transform: scale(1.01);
 }
 
-.sc-btn-primary {
-  background-color: $primary-color;
-  border-color: $white;
-  color: $white;
-  font-size: 20px;
-}
-
 .sc-btn-primary:hover {
 
-}
-
-.sc-btn-light {
-  background-color: $white;
-  border-color: $primary-color;
-  color: $primary-color;
-  font-size: 20px;
 }
 
 .sc-btn-light:hover {
 
 }
 
-.sc-btn-secondary {
-  background-color: $secondary-color;
-  border-color: $white;
-  color: $white;
-  font-size: 20px;
-}
 
 .sc-btn-secondary:hover {
 
