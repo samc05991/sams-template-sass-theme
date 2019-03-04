@@ -48,8 +48,10 @@
     background-color: $secondary-color;
 }
 
-.sc-row {
-    grid-template-columns: repeat(3, 1fr);
+.sc-row { // i should get an input here to deternine the number of columns
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-auto-rows: 1fr; // make each row the same height
     grid-gap: 10px;
     margin: 10px;
     padding: 5px;

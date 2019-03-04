@@ -1,0 +1,32 @@
+.sc-card {
+  background-color: $white;
+  
+  .sc-card-container {
+    padding: 10px;
+    display: grid;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: 
+        "header"
+        "content"
+        "footer";
+
+    .sc-card-header {
+      grid-area: header;
+      padding: 10px;
+
+      h3 {
+        margin-top: 0px;
+      }
+    }
+    
+    .sc-card-content {
+      grid-area: content;
+      padding: 10px;
+    }
+    
+    .sc-card-footer {
+      grid-area: footer;
+      padding: 10px;
+    }
+  }
+}
