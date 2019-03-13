@@ -4,4 +4,6 @@ To get started, download [http-server](https://www.npmjs.com/package/http-server
 
 Install sass `npm install sass -g`
 
+Boot up the server with `http-server`
+
 Start watching the scss files with `npm run watch`
