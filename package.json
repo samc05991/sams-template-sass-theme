@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/samc05991/sams-template-sass-theme/issues"
   },
-  "homepage": "https://github.com/samc05991/sams-template-sass-theme#readme"
+  "homepage": "https://github.com/samc05991/sams-template-sass-theme#readme",
+  "dependencies": {
+    "sass": "^1.17.3"
+  }
 }
