@@ -1,6 +1,6 @@
 @each $align, $direction in $directions {
-    .sc-align-items--#{$align} {
-        align-items: $direction;
+    .sc-align--#{$align} {
+        text-align: $direction;
     }
 }
 

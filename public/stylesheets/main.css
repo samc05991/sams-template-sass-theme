@@ -48,16 +48,16 @@
   padding: 5px;
 }
 
-.sc-align-items--left {
-  align-items: left;
+.sc-align--left {
+  text-align: left;
 }
 
-.sc-align-items--center {
-  align-items: center;
+.sc-align--center {
+  text-align: center;
 }
 
-.sc-align-items--right {
-  align-items: right;
+.sc-align--right {
+  text-align: right;
 }
 
 .sc-justify-items--left {
@@ -203,6 +203,7 @@ body, html {
   margin: 0px;
   height: 100%;
   font-family: Verdana, Geneva, sans-serif;
+  background-color: #F7F7F5;
 }
 
 /*# sourceMappingURL=main.css.map */
