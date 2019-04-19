@@ -1,0 +1,38 @@
+.sc-input {
+    width: 300px;
+    height: 35px;
+    border: 0px;
+    border-radius: 3px;
+    padding: 5px;
+    padding-left: 10px;
+    box-sizing: border-box;
+    font-size: 18px;
+    box-shadow: 0px 0px 5px 0px rgba(133,133,133,1);
+}
+
+.sc-input--number {
+
+}
+
+.sc-input--block {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.sc-input-group {
+
+}
+
+.sc-input-group--date-time {
+    width: 600px;
+}
+
+.sc-input-label {
+    margin-right: 10px;
+    font-size: 18px;
+}
+
+.sc-help-block {
+    font-size: 15px;
+    color: darkslategray;
+}
