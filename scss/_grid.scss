@@ -19,16 +19,15 @@
     height: 100%;
     display: grid;
     grid-template-columns: 200px auto;
-    grid-template-rows: 60px auto 60px;
+    grid-template-rows: 60px auto 67px;
     grid-template-areas: 
         "sidebar header"
         "sidebar content"
-        "sidebar footer";
+        "footer footer";
 }
 
 .sc-header {
     grid-area: header;
-    padding: 15px;
 }
 
 .sc-content {

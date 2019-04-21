@@ -17,13 +17,12 @@
   height: 100%;
   display: grid;
   grid-template-columns: 200px auto;
-  grid-template-rows: 60px auto 60px;
-  grid-template-areas: "sidebar header" "sidebar content" "sidebar footer";
+  grid-template-rows: 60px auto 67px;
+  grid-template-areas: "sidebar header" "sidebar content" "footer footer";
 }
 
 .sc-header {
   grid-area: header;
-  padding: 15px;
 }
 
 .sc-content {
@@ -72,6 +71,24 @@
   justify-items: right;
 }
 
+/* When the width is less than 400px then hide*/
+@media screen and (max-width: 400px) {
+  .sc-hide--xs {
+    display: none;
+  }
+}
+/* When the width is between 400px and 900px then hide*/
+@media screen and (min-width: 400px) and (max-width: 900px) {
+  .sc-hide--sm {
+    display: none;
+  }
+}
+/* When the width is more than 900px then hide*/
+@media screen and (min-width: 900px) {
+  .sc-hide--md {
+    display: none;
+  }
+}
 .sc-btn {
   min-width: 120px;
   min-height: 40px;
@@ -89,7 +106,7 @@
   color: #FAFCFC;
 }
 .sc-btn--light {
-  background-color: #FAFCFC;
+  background-color: #F7F7F5;
   border-color: #0097E3;
   color: #0097E3;
 }
@@ -136,9 +153,21 @@
   box-shadow: 0px 0px 5px 0px #858585;
 }
 
+.sc-input--date-day, .sc-input--date-month {
+  width: 41px;
+}
+
+.sc-input--date-year {
+  width: 62px;
+}
+
 .sc-input--block {
   width: 100%;
   margin-top: 10px;
+}
+
+.sc-input-group {
+  display: inline;
 }
 
 .sc-input-group--date-time {
@@ -357,6 +386,52 @@
   transform-origin: center;
   width: 40px;
   will-change: transform;
+}
+
+.sc-nav {
+  width: 100%;
+  height: 67px;
+  color: #FAFCFC;
+  background-color: #004263;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: 67px;
+  grid-template-areas: "nav-title nav-links";
+}
+.sc-nav .sc-nav-title {
+  grid-area: nav-title;
+  height: 100%;
+}
+.sc-nav .sc-nav-links {
+  grid-area: nav-links;
+  text-align: right;
+  height: 100%;
+}
+.sc-nav .sc-btn-group {
+  height: 100%;
+}
+.sc-nav .sc-btn-group .sc-btn {
+  height: 100%;
+  opacity: 1;
+  background-color: #004263;
+  color: #FAFCFC;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  border-radius: 0px;
+  font-size: 18px;
+}
+.sc-nav .sc-btn-group .sc-btn:hover {
+  cursor: pointer;
+  opacity: 1;
+  transition: none;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+.sc-nav .sc-btn-group .sc-btn--active {
+  background-color: #F7F7F5;
+  color: #004263;
 }
 
 body, html {
