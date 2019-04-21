@@ -9,3 +9,27 @@
         justify-items: $direction;
     }
 }
+
+@media only screen and (max-width: 600px) {
+    .sc-hide--xs {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .sc-hide--sm {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .sc-hide--md {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 1600px) {
+    .sc-hide--lg {
+        display: none;
+    }
+}
