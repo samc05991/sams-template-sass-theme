@@ -10,26 +10,23 @@
     }
 }
 
-@media only screen and (max-width: 600px) {
+/* When the width is less than 400px then hide*/
+@media screen and (max-width: 400px) {
     .sc-hide--xs {
         display: none;
     }
 }
 
-@media only screen and (max-width: 900px) {
+/* When the width is between 400px and 900px then hide*/
+@media screen and (min-width: 400px) and (max-width: 900px) {
     .sc-hide--sm {
         display: none;
     }
 }
 
-@media only screen and (max-width: 1200px) {
+/* When the width is more than 900px then hide*/
+@media screen and (min-width: 900px) {
     .sc-hide--md {
-        display: none;
-    }
-}
-
-@media only screen and (min-width: 1600px) {
-    .sc-hide--lg {
         display: none;
     }
 }
