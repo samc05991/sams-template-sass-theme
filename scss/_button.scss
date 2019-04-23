@@ -3,7 +3,7 @@
     min-height: 40px;
     border-radius: 3px;
     border: 0px;
-    opacity: 0.9;
+    opacity: 1;
     font-size: 16px;
 
     -webkit-box-shadow: 3px 3px 6px -1px rgba(0,0,0,0.75);
@@ -45,8 +45,21 @@
     width: 100%;
 }
 
+.sc-btn-group {
+    .sc-btn {
+        margin-right: 15px;
+    }
+}
+
 .sc-btn:hover {
     cursor: pointer;
+}
+
+.sc-btn-hover-effect {
+    opacity: 0.9;
+}
+
+.sc-btn-hover-effect:hover {
     opacity: 1;
     transition: 1s;
 

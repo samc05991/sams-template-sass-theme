@@ -1,6 +1,9 @@
 .sc-card {
   background-color: $white;
-  
+  -webkit-box-shadow: 5px 5px 12px -2px rgba(0,0,0,0.75);
+  -moz-box-shadow: 5px 5px 12px -2px rgba(0,0,0,0.75);
+  box-shadow: 5px 5px 12px -8px rgba(0,0,0,0.75);
+
   .sc-card-container {
     padding: 10px;
     display: grid;
@@ -17,6 +20,11 @@
       h3 {
         margin-top: 0px;
       }
+
+      hr {
+        background-color: $primary-color;
+        height: 3px;
+      }
     }
     
     .sc-card-content {
@@ -27,6 +35,10 @@
     .sc-card-footer {
       grid-area: footer;
       padding: 10px;
+    }
+
+    .sc-card-item {
+      margin-bottom: 15px;
     }
   }
 }
