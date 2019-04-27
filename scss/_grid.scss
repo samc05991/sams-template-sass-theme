@@ -36,6 +36,12 @@
     grid-area: footer;
 }
 
+.sc-footer--sticky {
+    position: fixed;
+    width: 100%;
+    bottom: 0px;
+}
+
 .sc-sidebar {
     grid-area: sidebar;
     background-color: $secondary-color;
